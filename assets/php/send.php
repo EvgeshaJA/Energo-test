@@ -6,9 +6,9 @@ require './Exception.php';
 
 // Переменные, которые отправляет пользователь, они равны инпутам из формы
 $name = $_POST['name'];
-$email = $_POST['phone'];
+$phone = $_POST['phone'];
 $messege = $_POST['messege'];
-
+$email = $_POST['email'];
 
 
 // Формирование самого письма
@@ -16,8 +16,10 @@ $title = "Заголовок письма";
 $body = "
 <h2>Новое письмо</h2>
 <b>Имя:</b> $name<br>
+<b>Имя:</b> $phone<br>
 <b>Почта:</b> $email<br><br>
 <b>Вопрос:</b> $messege<br>
+
 ";
 
 // Настройки PHPMailer
@@ -40,7 +42,22 @@ try {
     // Получатель письма
     $mail->addAddress('atmosferavoda@mail.ru'); //Ваш email
 
-// Отправка сообщения
+
+// Прикрипление файлов к письму
+if (!empty($_FILES['userfile']['name'][0])) {
+    for ($ct = 0; $ct < count($_FILES['userfile']['tmp_name']); $ct++) {
+        $uploadfile = tempnam(sys_get_temp_dir(), sha1($_FILES['userfile']['name'][$ct]));
+        $filename = $_FILES['userfile']['name'][$ct];
+        if (move_uploaded_file($_FILES['userfile']['tmp_name'][$ct], $uploadfile)) {
+            $mail->addAttachment($uploadfile, $filename);
+        } else {
+            $msg .= 'Не удалось прикрепить файл ' . $uploadfile;
+        }
+    }   
+}
+
+
+    // Отправка сообщения
 $mail->isHTML(true);
 $mail->Subject = $title;
 $mail->Body = $body;
