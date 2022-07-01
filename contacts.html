@@ -18,16 +18,16 @@
     <div class="container">
         <div class="header__wrapper">
             <div class="header__inner">
-                <div class="header__image">
+                <a class="header__image" href="main.html">
                     <img src="assets/img/logo.svg" alt="Энерго-Блок">
-                </div>
+                </a>
                 <nav class="header__navigation">
                     <ul class="header__list">
-                        <li class="header__item"><a href="" class="header__link">Ассортимент</a></li>
-                        <li class="header__item"><a href="" class="header__link">Для организаций</a></li>
-                        <li class="header__item"><a href="" class="header__link">Вакансии</a></li>
-                        <li class="header__item"><a href="" class="header__link">Блог</a></li>
-                        <li class="header__item"><a href="" class="header__link">Контакты</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Ассортимент</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Для организаций</a></li>
+                        <li class="header__item"><a href="job.html" class="header__link">Вакансии</a></li>
+                        <li class="header__item"><a href="blog.html" class="header__link">Блог</a></li>
+                        <li class="header__item"><a href="contacts.html" class="header__link">Контакты</a></li>
                         <li class="header__item--hidden">
                             <div class="mob-numb">
                                 <p class="mob-numb__title">Позвонить:</p>
@@ -100,7 +100,170 @@
         </div>
 
     </section>
+
+    <div class="contacts-btns">
+        <div class="container">
+            <ul class="contacts-btns__list">
+                <li class="contacts-btns__items contacts-btns__items--active" data-tabs-handler="orsha-cont">Орша</li>
+                <li class="contacts-btns__items" data-tabs-handler="tolochin-cont">Толочин </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <section class="contacts-info" data-tabs-field="orsha-cont">
+        <div class="container">
+            <div class="contacts-info__inner">
+                <div class="contacts-info__card">
+                    <p class="contacts-info__title">Режим работы:</p>
+                    <p class="contacts-info__cont">пн.-пт:&thinsp;&thinsp;9.00 - 19.00 <br> cб.:&thinsp;&thinsp;&ensp;&ensp;&ensp;9.00 - 17.00<br> вс.:&thinsp;&thinsp;&ensp;&ensp;&ensp;9.00 - 15.00
+                    </p>
+                </div>
+                <div class="contacts-info__card">
+                    <p class="contacts-info__title">Адреса:</p>
+                    <p class="contacts-info__cont">ул. Мира, 74 <br> ул. Мира, 74-142
+                    </p>
+                </div>
+                <div class="contacts-info__card">
+                    <p class="contacts-info__title">Телефоны:</p>
+                    <p class="contacts-info__cont">+375 216 527888 <br>+375 29 5527888
+                    </p>
+                </div>
+    
+                <div class="contacts-info__card">
+                    <p class="contacts-info__title">Почта:</p>
+                    <p class="contacts-info__cont">energo-blok@mail.ru
+                    </p>
+                </div>
+    
+
+            </div>
+
+            <div class="contacts-info__map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab89611bae278798e43c7f1f23f0ace3f091bce32c86f37817a38d799c89eec4f&amp;source=constructor" width="100%" height="345" frameborder="0"></iframe>   
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contacts-info hidden" data-tabs-field="tolochin-cont">
+        <div class="container">
+            <div class="contacts-info__inner">
+                <div class="contacts-info__card">
+                    <p class="contacts-info__title">Режим работы:</p>
+                    <p class="contacts-info__cont">пн.-пт:&thinsp;&thinsp;9.00 - 18.00 <br> cб.:&thinsp;&thinsp;&ensp;&ensp;&ensp;9.00 - 16.00<br> вс.:&thinsp;&thinsp;&ensp;&ensp;&ensp;9.00 - 13.00
+                    </p>
+                </div>
+                <div class="contacts-info__card">
+                    <p class="contacts-info__title">Адреса:</p>
+                    <p class="contacts-info__cont">ул. 40 Лет Октября 7-1 <br> (Центральная почта)
+                    </p>
+                </div>
+                <div class="contacts-info__card">
+                    <p class="contacts-info__title">Телефоны:</p>
+                    <p class="contacts-info__cont">+375 213 656020 <br>+375 29 2372940
+                    </p>
+                </div>
+    
+                <div class="contacts-info__card">
+                    <p class="contacts-info__title">Почта:</p>
+                    <p class="contacts-info__cont">energo-blok@mail.ru
+                    </p>
+                </div>
+    
+
+            </div>
+
+            <div class="contacts-info__map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7705ccc6ce91da3f1f08561c042bdb25ab261e64b14949c0914b36ba28a31077&amp;source=constructor" width="100%" height="345" frameborder="0"></iframe>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="numbers">
+    <div class="numbers__inner">
+
+        <div class="numbers__open">
+            <div class="numbers__card center toolBtn numbers__card--1">
+                <div class="numbers__image">
+                    <img src="assets/img/telegram.svg" alt="icon">
+                </div>
+                <div class="tooltip right">
+                    <div class="tooltip__inner">
+                        <a class="tooltip__link" href="tg://resolve?domain=username">Орша</a>
+                        <a class="tooltip__link" href="tg://resolve?domain=username">Толочин</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="numbers__card center toolBtn numbers__card--2">
+                <div class="numbers__image">
+                    <img src="assets/img/viber.svg" alt="icon">
+                </div>
+                <div class="tooltip right">
+                    <div class="tooltip__inner">
+                        <a class="tooltip__link" href="viber://chat?number=+375295527888">Орша</a>
+                        <a class="tooltip__link" href="viber://chat?number=+375292372940">Толочин</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="numbers__card center toolBtn numbers__card--3">
+                <div class="numbers__image">
+                    <img src="assets/img/fax.svg" alt="icon">
+                </div>
+                <div class="tooltip right">
+                    <div class="tooltip__inner">
+                        <a class="tooltip__link" href="tel:+375295527888">Орша</a>
+                        <a class="tooltip__link" href="tel:+375292372940">Толочин</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="numbers__card center toolBtn numbers__card--4">
+                <div class="numbers__image">
+                    <img src="assets/img/email.svg" alt="icon">
+                </div>
+                <div class="tooltip right">
+                    <div class="tooltip__inner">
+                        <a class="tooltip__link" href="mailto:energo-blok@mail.ru">Написать нам</a>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+
+        <div class="numbers__card center numbers__hidden">
+            <div class="numbers__image">
+            </div>
+
+        </div>
+    </div>
+</section>
 </main>
+
+<footer class="contacts-footer">
+    <div class="container">
+        <div class="contacts-footer__inner">
+            <div class="contacts-footer__image">
+                <img src="assets/img/logo-footer2.svg" alt="img">
+            </div>
+            <ul class="contacts-footer__list">
+                <li class="contacts-footer__item">
+                    <a href="main.html" class="contacts-footer__link">Главная</a>
+                </li>
+                <li class="contacts-footer__item">
+                    <a href="blog.html" class="contacts-footer__link">Блог</a>
+                </li>
+                <li class="contacts-footer__item">
+                    <a href="job.html" class="contacts-footer__link">Вакансии</a>
+                </li>
+            </ul>
+
+            <div class="contacts-footer__rights">Все права защищены</div>
+            <div class="contacts-footer__chel"></div>
+        </div>
+    </div>
+</footer>
 
 
 
